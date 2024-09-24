@@ -113,4 +113,21 @@ API의 메서드는 HTTP 메서드를 사용해 특정 API의 기능을 구현�
 
 API는 HTTP 메서드를 통해 동작을 정의, 각 엔드포인트에 어떤 작업이 수행될지를 결정
 
-![image.png](week1%20wil%2010b9e4b2347c80348be7c039e0697610/image.png)
+![image.png](week1/image.png)
+
+# TODO MATE API 작성
+유저 관련
+회원가입: POST /users/register
+로그인: POST /users/login
+할 일 관련
+할 일 전체 조회: GET /todos
+할 일 생성: POST /todos
+할 일 수정: PATCH /todos/{todo_id}
+할 일 삭제: DELETE /todos/{todo_id}
+할 일 체크: POST /todos/{todo_id}/check
+할 일 체크 해제: POST /todos/{todo_id}/uncheck
+친구 관련
+친구 추가: POST /friends
+친구 조회: GET /friends
+친구 삭제: DELETE /friends/{friend_id}
+특정 친구의 할 일 조회: GET /friends/{friend_id}/todos
